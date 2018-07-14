@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Volitium.io - The Platform for The Power of Choosing</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Kadwa" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).on('click', 'a[href^="#"]', function (event) {
+				event.preventDefault();
+				$('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="navbar" style="background-color: #00bf6e;">
+			<div class="subnavbar" style="background-color: #00bf6e;">
+				<a class="navlabels" href="#introTag">Introduction</a>
+			</div>
+		</div>
+		
+		<div style="position: absolute; height: 100%; width: 100%; display: table-cell; vertical-align: middle;">
+			<div style="position: relative; top: 50%; transform: translateY(-50%);">
+				<span class="sitetitle" style="font-size: 144px;">Volitium</span></span><br>
+				<span class="sitetitle" style="font-size: 24px;">Protecting your Volition with the Blockchain.</span>
+			</div>
+		</div>
+		<div class="siteheader">
+			<div style="position: absolute; height: 100%; width: 100%; background-color: orange;"></div>
+		</div>
+		
+		<div id="particles-js"></div>
+		<div class="headerborderbot"></div>
+		<div class="botborder" style="background-color: #00bf6e;">
+			<div id="subscribeDiv" style="margin: auto;display: none;" onsubmit="return subscribe()">
+				<form name="formSub" autocomplete="on" >
+					<label for="email" class="emaillabel">Subscribe to Volitium newsletter for future updates:</label>
+					<input type="email" name="email" id="emailInput" placeholder="Enter Email" class="emailinput" required>
+					<input type="submit" name="subscribe" value="Subscribe" class="emailbutton">
+				</form>
+			</div>
+			<div id="subscribedDiv" style="margin: auto; color: white; display: none;">
+				<span>Thank you for subscribing to our newsletter.</span>
+			</div>
+		</div>
+		<div style="height: 10vh;"></div>
+		<div id="introTag" class="container">
+			<span class="title">Introduction</span>
+			<p>
+								
+			</p>
+		</div>
+		<div style="background-color: #00bf6e; height: 300px; padding: 3px 10%;">
+			<div style="width: 90%; height: 1px; background-color: #00bf6e; margin: 5px auto 20px auto; "></div>
+			<div style="display: inline-block; width: 50%;"><h2 class="footertitle"  style="color:white;">Social Media</h2><div style="width: 100%; height: 100%;"><p></p></div></div><div style="display: inline-block;  width: 50%;"><h2 class="footertitle"  style="color:white;" >Medium</h2></div>
+		</div>
+		<div style="background-color: #00bf6e; height: 80px; padding: auto 10%;">
+			<p class="footernotes" style="padding: 25px; color:white;">Copyright © 2018 volitium.io. All Rights Reserved.</p>
+		</div>
+	</body>
+	
+	
+	<script src="./js/particles.js"></script>	
+	<script src="./js/particles-app.js"></script>		
+	
+	
+	<script>
+	
+		function subscribe() {
+			var	xhttp = new XMLHttpRequest();
+			
+			var x = document.forms["formSub"]["email"].value;
+			if (x=="") { x = $("emailInput").value; }
+			xhttp.open("GET", "https://volitium.io:5011/receive?email=" + x, true);
+			xhttp.send();
+
+			$('#subscribeDiv').fadeOut(500, function() {
+				$('#subscribedDiv').fadeIn(500);
+			});
+			return false;
+		}
+	</script>
+</html>
