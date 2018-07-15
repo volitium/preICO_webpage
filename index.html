@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">		
-		
+		<!meta http-equiv="refresh" content="5">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Volitium.io - The Platform for The Power of Choosing</title>
@@ -41,12 +40,104 @@
 			body {
 				font-size: 30%;
 				}
-
+				
+			.navbar {
+					position: fixed;
+					width: 100%;
+					height: 5%;
+					min-height: 40px;
+					z-index: 3;
+					background-color: rgba(0,0,0,0.6);
+				}	
+				
+			.subnavbar {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+				}	
+			
+			.navlabels, .navlabels:link {
+				text-decoration: none;
+				margin: auto;
+				padding: auto;
+				width: 140px;
+				display: inline-block;
+				font-size: 20px;
+				color: rgba(255,255,255,1.00);
+				z-index: 2;
+				}
+			
+			
+			.siteMoto {
+				font-size: 24px;
+				color: rgba(255,255,255,1.00);
+				z-index: 2;
 			}
+
+			.sitetitle {
+				font-size: 84px;
+				color: rgba(255,255,255,1.00);
+				z-index: 2;
+			}	
 			
 			
+			.siteheader {
+				z-index: -1;
+				height: 40%;
+				width: 100%;
+				overflow-y: hidden;
+				position: absolute;
+				text-align: center;
+			}			
+
+			.botborder {
+				position: relative;
+				height: 12%;
+				width: 100%;
+				bottom: 0;
+				background-color: #00bf6e;
+				display: flex;
+				transform: translateY(50%);
+			}					
+
+			.emaillabel {
+				font-size: 15px;
+				color: rgba(240,240,240,1.00);
+				padding: 5px 20px;
+			}
+			.emailinput {
+				font-size: 12px;
+				text-align: left;
+				border-radius: 2px;
+				border: 1px solid rgba(160, 160, 160, 1);
+				background-color: rgba(255,255,255,1);
+				color: rgba(20,20,20,1.00);
+				padding: 6px 10px 6px 10px;
+				transition: all 0.2s;
+			}
+
+			.emailbutton {
+				font-size: 12px;
+				margin: 0px 0px 0px 10px;
+				padding: 6px 16px;
+				border-radius: 2px;
+				border: 0px;
+				color: rgba(60,60,60,1.00);
+				background-color: rgba(255,255,255,1.00);
+				cursor: pointer;
+			}	
 			
-			
+			.footerlabels {
+				font-size: 13px;
+				color: rgba(90,90,90,1.00);
+			}
+
+			.footernotes {
+				display: block;
+				color: rgba(130,130,130,1.00);
+				font-size: 15px;
+			}					
+			}
 		</style>		
 		
 		
@@ -63,17 +154,16 @@
 		</div>
 		
 		<div class="siteheader">
-			<div style="height: 100%; width: 100%; background-color: orange;">			
-				<br><br><br><br><br><br><br><br>
-				<span class="sitetitle" style="font-size: 800%;">Volitium</span><br>
-				<span class="sitetitle" style="font-size: 200%;">Protecting your Volition with the Blockchain.</span>
-			
-			</div>
+			<!div style="height: 100%; width: 100%; background-color: orange;">			
+				<br><br><br><br><br><br>
+				<span class="sitetitle">Volitium</span><br>
+				<span class="siteMoto">Protecting Volition with Blockchain</span>
+			<!/div>
 		</div>
 		
 		<div id="particles-js"></div>
 		
-		<div class="botborder" style="background-color: #00bf6e;">
+		<div class="botborder">
 			<div id="subscribeDiv" style="margin: auto;" onsubmit="return subscribe()">
 				<form name="formSub" autocomplete="on" >
 					<label for="email" class="emaillabel">Subscribe to Volitium newsletter for future updates:</label>
@@ -96,8 +186,10 @@
 			<div style="width: 90%; height: 1px; background-color: #00bf6e; margin: 5px auto 20px auto; "></div>
 			<div style="display: inline-block; width: 50%;"><h2 class="footertitle"  style="color:white;">Social Media</h2><div style="width: 100%; height: 100%;"><p></p></div></div><div style="display: inline-block;  width: 50%;"><h2 class="footertitle"  style="color:white;" >Medium</h2></div>
 		</div>
-		<div style="background-color: #00bf6e; height: 80px; padding: auto 10%;">
-			<p class="footernotes" style="padding: 25px; color:white;">Copyright © 2018 volitium.io. All Rights Reserved.</p>
+		
+		<div style="background-color: #00bf6e; height: 180px; padding: auto 10%;">
+			<p class="footerlabels" style="padding: 10px; color:yellow;">Contact: support@volitium.io</p>
+			<p class="footernotes" style="padding: 10px; color:yellow;">Copyright © 2018 volitium.io. All Rights Reserved.</p>
 		</div>
 	</body>
 	
