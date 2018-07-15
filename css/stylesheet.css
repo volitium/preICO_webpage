@@ -177,4 +177,7 @@ body::-webkit-scrollbar-thumb
   opacity: 1;
 }
 
+.thankMessage {
+	font-size: 20px;
 
+}
