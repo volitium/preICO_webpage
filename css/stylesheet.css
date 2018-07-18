@@ -73,13 +73,13 @@ body::-webkit-scrollbar-thumb
 
 .siteMoto {
 	font-size: 36px;
-	color: black;
+	color: white;
 	z-index: 2;
 }
 
 .sitetitle {
 	font-size: 144px;
-	color: black;
+	color: white;
 	z-index: 2;
 }
 
