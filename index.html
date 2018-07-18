@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!meta http-equiv="refresh" content="5">
+		<meta http-equiv="refresh" content="5">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Volitium.io - The Platform for The Power of Choosing</title>
+		<link rel="icon" href="./img/logo.gif">
 		
+		
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -87,18 +91,19 @@
 				width: 100%;
 				overflow-y: hidden;
 				position: absolute;
+				top: 100px;
 				text-align: center;
 				background-color: orange;
 			}			
 
 			.botborder {
-				position: relative;
+				position: absolute;
+				top: 295px;
 				height: 15%;
 				width: 100%;
 				bottom: 0;
 				background-color: #00bf6e;
 				display: flex;
-				transform: translateY(50%);
 			}					
 
 			.emaillabel {
@@ -141,7 +146,51 @@
 			.thankMessage {
 				font-size: 12px;
 
-			}			
+			}	
+			
+			
+			.containerText {
+				display: hidden;
+				position: absolute;
+				top: 390px;
+				right: 0;	
+				height: 5200px;
+				text-align: left;
+				padding: 50px 10%;
+				background-color: orange;
+			}		
+							
+			.socialBlock {
+				position: absolute;
+				top: 5200px;
+				right: 0;
+				height: 400px; 
+				width: 100%;
+				
+				background-color: #00bf6e; 
+				padding: 3px 10%;
+			}
+
+			.footerBlock {
+				position: absolute;
+				top: 5600px;
+				right: 0;
+				background-color: #00bf6e; 
+				height: 180px; 
+				width: 100%;
+				padding: auto 10%;"
+
+			}							
+							
+			.title {
+				font-size: 24px;
+				color: white;
+			}
+
+			.introText {
+				font-size: 12px;
+				color: white;
+			}
 							
 			}
 		</style>		
@@ -151,13 +200,31 @@
 	</head>
 
 	<body>
-		<div class="navbar" style="background-color: #00bf6e;">
-			<div class="subnavbar" style="background-color: #00bf6e;">
-				<a class="navlabels" href="#introTag">Introduction</a>
-				<a class="navlabels" href="#introTag">Roadmap</a>
-				<a class="navlabels" href="#introTag">Events</a>
+		
+		<nav class="navbar navbar-default navbar-fixed-top bg-white" style="background-color: white;">
+		  <div class="container" style="background-color: white;">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a href="./index.html" title="Volitium.io"><img src="./img/volitiumlogo.gif" alt="volitium.io"></a>
 			</div>
-		</div>
+			<div class="collapse navbar-collapse h4" id="myNavbar" >
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a class="navlabels" href="#introTag">Intro</a></li>
+				<li><a class="navlabels" href="#currentTag">Current</a></li>
+				<li><a class="navlabels" href="#solutionTag">Solution</a></li>
+				<li><a class="navlabels" href="#planTag">Plan</a></li>
+				<li><a class="navlabels" href="#roadmapTag">Roadmap</a></li>
+				<li><a class="navlabels" href="#eventsTag">Events</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>	
+		
+		
 		
 		<div class="siteheader">
 			<!div style="height: 100%; width: 100%; background-color: orange;">			
@@ -183,17 +250,166 @@
 		</div>
 		
 		
-		<div style="height: 10vh;"></div>
-		<div id="introTag" class="container">
-			<span class="title">Introduction</span>
+		<!div style="height: 10vh;"></div>
+		<div id="introTag" class="containerText">
+			<br><br><br><br><br>
+			<span class="title">Intro</span>
+			<p class="introText">	
+Without a doubt, Blockchain is a great technology. Its application should not be limited to the
+improvement of financial technology, since its irreversible and traceable open records can
+make the Blockchain a prudent tool for unpenetrable voting systems and conducting
+trustworthy survey results. We will create a coin for the specific purpose of conducting voting
+polls and surveys.Our goal in creating Volitium is to allow people to use our platform to
+express their will and individual decisions by voting and participating in polls at their
+convenient time.
+</p><br>
+<p class="introText">
+The coin will be named “Volitium”. The name “Volitium” originates from the English word
+“Volition”, which is defined as one’s power to use their will consisting of connotation of one’s
+choice, adding -ium promotes Volitium as an element, symbolizing its metallic properties.
+ </p><br>
+ <p class="introText">
+Blockchain is well known for its irreversible public record and zero double spending. Our
+goal is to save cost by removing the middleman through blockchain transactions, by
+eliminating the middleman, while maintaining the the authenticity of survey/poll data. With
+the implementation of blockchain’s smart contract Volitium ensure transparency,
+trustworthiness, and anonymity necessary for surveys, polls, and local voting. With Volitium
+as a platform and blockchain as our powerhouse, we will build a voting and survey system
+that is safer, more secure, and more trustworthy than ever before . Participants may
+voluntarily complete surveys with personal data to receive Volitium as a “tip income” reward
+from companies.	 
+</p><br>
+<p class="introText">
+Our target market is companies, individuals, governments, political parties and communities
+which conduct surveys, research, or opinion polls for policies or public facilities. When
+Volitium system becomes widespread, our ultimate goal is to reform the company and
+condominium board voting, community and policy voting, etc. processes to improve
+management of policies and public facilities to benefit ordinary people, while mainstreaming
+blockchain usage.			
+			
+		
+			</p><br><br>
+<span id="currentTag"></span> <br><br><br><br><span class="title">Current Survey/Poll Solution</span>	
+<p class="introText">
+Whether it is thriving companies or struggling startups, academic researchers or political
+entities, there is a demand to conduct surveys or polls for various reason, beit oncoming
+committee voting, policy voting, or even condominium landscaping opinions. In the current
+market, survey phone calls mainly occur in the evenings or during meals and are perceived
+as a disturbance, in addition to the 10 to 15 minutes questionnaires if the call is answered.
+Phone calls with pre-recorded voice messages asking opinion polls are likely to be rejected.
+A market research survey or opinion poll response rate is only 10% to 15%, which means
+making thousands of phone calls to obtain a sample of a few hundred responses.	
+</p>
+<p class="introText">
+There are a few solutions in the market to modify these situations, however, most, if not all,
+are flawed. Companies like Gap and Starbucks may request customer feedback through
+company websites. In return, survey customers will be rewarded with a discount upon their
+next visit in stores, or earn a chance to enter a lucky draw, and even earn a free cup of
+coffee at a designated coffee shop. Some limitations would be owing the company’s own
+circle of customers.	
+</p>
+<p class="introText">
+Furthermore, there are websites and apps invading people’s online privacy through the use
+of cookies and capitalizing the user’s information about their interests, habits and possible
+needs. While the number of people expressing their concern for privacy intrusion is
+increasing, some aggrieved individuals are already blocking cookies. Users do not like their
+online information being shared or viewed by companies unknowingly, as shown in the
+recent Facebook data scandal which lead millions of users to deleting their Facebook
+accounts..This is becoming a trend. For example, Apple Company’s iOS is providing ad
+tracker and ad blocking features that block online tracking, while the co-founder of Russia's
+Kaspersky Lab, a Russian online security company, is building smartphones that prevent
+apps and websites from stalking users.	
+</p>			
+<p class="introText">
+Companies are purchasing consumer data from social networking sites and technology
+giants such as Facebook and Google collected through algorithms engineered to track
+users’ interests and tailor advertising content to them.	
+</p><br>
+
+<span id="solutionTag"></span> <br><br><br><br><span class="title">Our Solution</span>	
+<p class="introText">	
+Our solution is to create a network of participants who are willing to answer questionnaires
+by using Volitium-based programs. A chosen sample of respondents will receive tokens to
+answer the survey. The tokens are used to avoid frauds and duplications. Respondents can
+answer questions at their leisure, whether it be riding on a bus or waiting for someone at a
+coffee shop. Upon the respondent’s completion of the surveys, they will get paid by their
+choice of payment. Users do not need to worry about the complexity of the underlying
+blockchain technology. A win-win situation can be achieved as companies can get the
+answers they want, while saving costs by simplifying steps to collect genuine information,
+and respondents are rewarded, all in a single app.
+	
+</p>
+<p class="introText">	
+What gives Volitium its edge, making this decentralized blockchain system superior to
+centralized apps? Volitium provides services in two ways. The first is that Volitium is an
+uncentralized blockchain that removes the possibility of failure and breach of information that
+centralized systems contain. Centralized systems contain a single point of failure when
+facing a Distributed Denial of Service (DDOS) attacks. The decentralized blockchain record
+also means that survey and voting results cannot be changed once submitted and therefore
+results are much more credible and secure.The smart contract that Volitium creates ensures
+that surveyees and voters cast their ballots only once.	
+</p><br>
+<span id="planTag"></span><br><br><br><br> <span class="title">Plan</span>	
+<p class="introText">
+In Volitium’s initial stages, our website will be a platform for small investors, startups, small
+businesses, student-launched research, market researchers, market participants (who may
+want to find out market or economic sentiments), and for those completing surveys for
+fun.Through Volitium’s initial stages, user information and opinions will be gathered. This
+service will all be free of charge and survey results will be open to the public. Questionnaires
+and analytical results will be recorded and available in real time.
+</p>
+<p class="introText">
+Seperate from our free service, larger companies may access a larger survey sample size
+with information that caters to their needs, with a small cost. This is the second stage of
+Volitium. Companies will buy Volitium to reward respondents. Therefore, companies will
+need to budget their survey by estimating rewards for surveyees. The survey results will be
+private and owned by companies.
+</p>
+<p class="introText">
+Public opinion polls is another area that blockchain technology can reduce chances of fraud
+and allow people to reflect their real opinion. People want to be consulted on policies or
+developments that concern their living environment or neighborhood. For example, when a
+construction site seeks opinion on whether a building should be torn down, little to no
+realistic measures are taken place to inform the local community that they can express their
+opinions and concerns. Many people do not pay attention to the minimal advertising set in
+place by the construction companies. Moreover, online opinions can be faked for a specific
+political purpose, either positively or negatively. Even municipal invitations for a public
+consultation meeting at a venue can be easily forgotten if received long before the meeting
+date. Our solution suggests that tokens will be sent to affected neighbourhood residents who
+already registered their addresses together with their personal identities having shown to the
+municipal office, and only those with tokens are endorsed to submit opinions or votes at their
+convenience within a time frame. It is foreseen that there would be less forgetful voters and
+lesser chance of fake polls.
+</p>
+<p class="introText">
+It is also our plan to crowdfund in creating Volitium coin. However, we will further provide
+more information of how and when we will launch our crowdfunding activities later in our blog
+and facebook. Meanwhile, we will continue to bring changes in our society through the
+implementation of Blockchain technology.		
+</p><br>
+			
+			<span id="roadmapTag"><br><br><br><br></span><span class="title">Roadmap</span>
+			<p class="introText">Coming soon ...</p><br><br>
+			<span id="eventsTag"><br><br><br><br></span> <span  class="title">Events</span>
+			<p class="introText">Coming soon ...</p><br><br>
+			
 		</div>
 		
-		<div style="background-color: #00bf6e; height: 300px; padding: 3px 10%;">
+		
+
+			<!div style="width: 90%; height: 1px; background-color: #00bf6e; margin: 5px auto 20px auto; "></div>		
+		
+		<div class="socialBlock">
 			<div style="width: 90%; height: 1px; background-color: #00bf6e; margin: 5px auto 20px auto; "></div>
 			<div style="display: inline-block; width: 50%;"><h2 class="footertitle"  style="color:white;">Social Media</h2><div style="width: 100%; height: 100%;"><p></p></div></div><div style="display: inline-block;  width: 50%;"><h2 class="footertitle"  style="color:white;" >Medium</h2></div>
+			<div style="display: inline-block; width: 50%;"><h2 class="footertitle"  style="color:white;">Coming soon ...</h2><div style="width: 100%; height: 100%;"><p></p></div></div><div style="display: inline-block;  width: 50%;"><h2 class="footertitle"  style="color:white;" >Coming soon ...</h2></div>
+
 		</div>
+
+
+
 		
-		<div style="background-color: #00bf6e; height: 180px; padding: auto 10%;">
+		<div class="footerBlock">
 			<p class="footerlabels" style="padding: 10px; color:yellow;">Contact: support@volitium.io</p>
 			<p class="footernotes" style="padding: 10px; color:yellow;">Copyright © 2018 volitium.io. All Rights Reserved.</p>
 		</div>
